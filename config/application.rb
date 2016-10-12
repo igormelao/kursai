@@ -8,8 +8,12 @@ Bundler.require(*Rails.groups)
 
 module Kursai
   class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    # Use the responders controller from the responders gem
+    config.app_generators.scaffold_controller :responders_controller
+
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.default_locale = "pt-BR"
+    config.time_zone = 'Brasilia'
+    config.encoding = "utf-8"
   end
 end

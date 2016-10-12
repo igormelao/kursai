@@ -1,0 +1,13 @@
+pt-BR:
+  students:
+    edit:
+      edit_student: Editar Estudante
+      button_edit: Salvar
+    index:
+      students: Estudantes
+    new:
+      new_student: Cadastrar Estudante
+      button_new: Cadastrar
+    show:
+      show_student: Vizualizar Estudante
+      student: Estudante

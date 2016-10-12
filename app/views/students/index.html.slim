@@ -1,0 +1,30 @@
+= provide(:title, t('.students'))
+
+h1 
+	= t('.students')
+
+.row
+	.col-xs-12
+		.table-responsive
+			table.table
+				table.table
+					thead
+						tr
+							th
+								= Student.human_attribute_name(:name)
+							th
+								= t('action')
+						tbody
+							- @students.each do | student |
+								tr
+									td
+										= link_to student.name, student_path(student)
+									td
+										= link_to edit_student_path(student), class: "btn btn-success btn-xs" do
+                      						span.glyphicon.glyphicon-pencil
+										= link_to student_path(student), data: { confirm: t('remove_register_confirmation') }, method: :delete, class: "btn btn-danger btn-xs" do
+                      						pan.glyphicon.glyphicon-trash
+
+.row
+	.col-xs-12
+  		= link_to t('add'), new_student_path, class: 'btn btn-primary'

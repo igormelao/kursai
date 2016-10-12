@@ -1,0 +1,12 @@
+navbar.navbar-fixed-top.navbar-inverse
+        .navbar-header
+          button.navbar-toggle data-target="#system-navbar" data-toggle="collapse" type="button"
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to "Kursai", root_path, class: 'navbar-brand'
+
+        #system-navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              = link_to Student.model_name.human, students_path

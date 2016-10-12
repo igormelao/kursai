@@ -1,0 +1,22 @@
+= provide(:title, t('.show_student'))
+
+h1
+	= t('.student')
+
+.row
+	.col-xs-2
+		=Student.human_attribute_name(:name)
+	.col-xs-2
+		= @student.name
+
+.row
+	.col-xs-2
+		= Student.human_attribute_name(:register_number)
+	.col-xs-2
+		= @student.register_number
+
+.row
+	.col-xs-2
+		= Student.human_attribute_name(:status)
+	.col-xs-2
+		= @student.status_humanize
