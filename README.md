@@ -7,7 +7,7 @@ O Kursai está disponilibizado no heroku [AQUI](https://boiling-castle-66536.her
 
 ## Configurando o seu ambiente
 
-1. Faça o clone deste projeto com `git clone https://github.com/igormelao/kursai.git
+1. Faça o clone deste projeto com `git clone https://github.com/igormelao/kursai.git`
 2. Entre na pasta do projeto e instale as dependências com `bundle install`
 3. Rode o comando `rails db:migrate` para criar o banco e suas tabelas
 4. Execute os testes com com o comando `rspec`
