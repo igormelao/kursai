@@ -1,0 +1,21 @@
+pt-BR:
+  activerecord:
+    models:
+      classroom:
+        one: Matrícula de estudante
+        other: Matrículas de estudantes
+
+    attributes:
+      classroom:
+        course: Curso
+        entry_at: Data de matrícula
+        student: Estudante
+
+    errors:
+      models:
+        classroom:
+          attributes:
+            entry_at:
+              blank: Data de matrícula é obrigatória
+            student_id:
+              taken: Estudante já está matriculado no curso

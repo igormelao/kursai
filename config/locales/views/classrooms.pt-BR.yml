@@ -1,0 +1,8 @@
+pt-BR:
+  classrooms:
+    edit:
+      edit_classroom: Editar Sala de aula
+      button_edit: Salvar
+    new:
+      new_classroom: Matrícula de estudante
+      button_new: Cadastrar

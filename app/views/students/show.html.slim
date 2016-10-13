@@ -1,5 +1,7 @@
 = provide(:title, t('.show_student'))
 
+- courses = @student.courses
+
 h1
 	= t('.student')
 
@@ -20,3 +22,25 @@ h1
 		= Student.human_attribute_name(:status)
 	.col-xs-2
 		= @student.status_humanize
+
+- if courses.present?
+  h3
+    = t('.courses')
+  .row
+	  .col-xs-12
+	    .table-responsive
+	      table.table
+	        table.table
+	          thead
+	            tr
+	              th
+	                = Course.human_attribute_name(:name)
+	              th
+	                = Course.human_attribute_name(:status)
+	          tbody
+	            - courses.each do |course|
+	                tr
+	                  td
+	                    = link_to course.name, course_path(course)
+	                  td
+	                    = link_to course.status_humanize, course_path(course)

@@ -1,10 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe StudentsController, type: :controller do
-	let(:students) 		   { create_list(:student, 2) }
-	let(:student)  		   { students.first }
 	let(:permitted_params) { [:name, :register_number, :status] }
-	let(:error_msg) 	   { 'error message' }
 
 	describe '#index' do
 		before { get(:index) }

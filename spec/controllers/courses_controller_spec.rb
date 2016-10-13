@@ -1,11 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe CoursesController, type: :controller do
-	let(:courses)          { create_list(:course, 2) }
-	let(:course)           { courses.first }
-	let(:classrooms)       { create_list(:classroom, course: course) }
 	let(:permitted_params) { [:name, :description, :status] }
-	let(:error_msg)        { 'error message' }
 
 	describe '#index' do
 		before { get(:index) }
