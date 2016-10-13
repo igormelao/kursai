@@ -1,0 +1,13 @@
+pt-BR:
+  courses:
+    edit:
+      edit_course: Editar Curso
+      button_edit: Salvar
+    index:
+      courses: Cursos
+    new:
+      new_course: Cadastrar Curso
+      button_new: Cadastrar
+    show:
+      show_course: Vizualizar Curso
+      course: Cursos

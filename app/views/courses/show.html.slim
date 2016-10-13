@@ -1,0 +1,22 @@
+= provide(:title, t('.show_course'))
+
+h1
+  = t('.course')
+
+.row
+  .col-xs-2
+    =Course.human_attribute_name(:name)
+  .col-xs-2
+    =@course.name
+
+.row
+  .col-xs-2
+    =Course.human_attribute_name(:description)
+  .col-xs-2
+    =@course.description
+
+.row
+  .col-xs-2
+    = Course.human_attribute_name(:status)
+  .col-xs-2
+    = @course.status_humanize
